@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio - Lâm Đức Long</title>
+    <style>
+        body {
+            background-color: #49BBF3;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h2 {
+            background-color: yellow;
+            text-decoration: underline;
+            font-style: italic;
+        }
+
+        h3 {
+            color: white;
+            letter-spacing: 5px;
+        }
+
+        .skill-item {
+            line-height: 30px;
+        }
+
+        ol > li{
+            margin-left: 50px;
+        }
+
+        ul {
+            /* list-style-type: circle; */
+            list-style-type: square;
+            /* list-style-type: upper-roman; */
+            list-style-position: inside;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+
+        table, th, td {
+            border: 5px dashed #F96B09;
+        }
+
+        th, td{
+            line-height: 40px;
+        }
+
+        .profile-image {
+            height: 300px;
+            width: auto;
+            border-radius: 10%;
+        }
+
+        #web-title {
+            color: #F96B09;
+            padding-left: 35%;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="web-title">Lam Duc Long's portfolio</h1>
+    <h2>Personal Information</h2> 
+
+    <!-- 
+        Ngày: 06/11/2021
+        Bài học: Cấu trúc cơ bản của HTML
+     -->
+    
+    <!-- src => source, alt => alternative text -->  
+
+    <!--
+        <img src="https://thosuaxe.vn/wp-content/uploads/2020/12/hinh-anh-soai-ca-2.jpg" alt="Ảnh profile của Lam Duc Long">
+    -->
+    
+    <img class="profile-image" src="./images/Profile Picture.png" alt="">
+
+    <h3>Fullname</h3>
+    <p>Lam Duc Long</p>
+
+    <h3>Date of birth </h3>
+    <p>06/11/2021</p>
+
+    <h3>Address</h3>
+    <p>Ho Chi Minh City</p>
+
+    <h3>Phone number</h3>
+    <p>0987654321</p>
+
+    <h3>Email</h3>
+    <p>longlamduc@gmail.com</p>
+
+    <h3>Facebook link</h3>
+    <!-- a -> anchor tag -->
+    <!--
+        target="_self" -> mở đường dẫn ngay trên trang hiện tại
+        target="_blank" -> mở đường dẫn ở tab mới
+    -->
+    <p>Link: <a href="https://www.google.com.vn/" target="_blank">Click here to navigate</a></p>
+
+    <br>
+
+    <h2>Skills</h2>
+
+    <!--
+        ul -> unordered list
+        ol -> ordered list
+        li -> list item
+    -->
+    <ul>
+        <li class="skill-item">Teaching</li>
+        <li class="skill-item">Presentation</li>
+        <li class="skill-item">Web Development</li>
+    </ul>
+
+    <h2>Lessons</h2>
+
+    <ol type="1">
+        <li>Overview: Web and Internet</li>
+        <li>VS Code and GitHub</li>
+        <li>Overview: UI/UX Design</li>
+        <li>HTML Structure</li>
+    </ol>
+
+    <h2>Projects</h2>
+    <table>
+        <tr>
+            <th>No.</th>
+            <th>Project Name</th>
+            <th>Completed Date</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Portfolio Page</td>
+            <td>09/11/2021</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Cat City Registration</td>
+            <td>11/11/2021</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Twitter Page</td>
+            <td>16/11/2021</td>
+        </tr>
+    </table>
+</body>
+</html>
