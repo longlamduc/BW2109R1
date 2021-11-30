@@ -1,0 +1,46 @@
+img {
+    width: 100%;
+}
+
+/* 
+body > div => chỉ áp dụng cho 
+các div là con của body
+(dưới body 1 cấp)
+*/
+body > div {
+    float: left;
+    width: 16%;
+    /* margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 20px;
+    margin-bottom: 20px; */
+    /* clockwise notation */
+    margin: 20px 2% 20px 2%; 
+    transition-duration: 3s;
+    opacity: 0.7;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* 
+h1 + div => chỉ áp dụng cho
+1 thẻ div duy nhất bên dưới h1
+*/
+h1 + div {
+    background-color: cornflowerblue;
+}
+
+/* 
+h1 ~ div => áp dụng cho TẤT CẢ
+div nằm bên dưới h1
+*/
+h1 ~ div {
+    background-color: cornflowerblue;
+}
+
+body > div:hover {
+    background-color: red;
+    opacity: 1.0;
+}
